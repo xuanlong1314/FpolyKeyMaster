@@ -19,7 +19,7 @@ namespace KeyMaster_Data.Models
 
         [MaxLength(50)] // Giới hạn độ dài tối đa cho TrangThai
         [Required(ErrorMessage = "không được để trống.")]
-        public string TrangThai { get; set; } // Trạng thái của hóa đơn
+        public bool TrangThai { get; set; } // Trạng thái của hóa đơn
 
         public DateTime NgayDatHang { get; set; } // Ngày đặt hàng
         public DateTime NgayNhanHang { get; set; } // Ngày nhận hàng

@@ -28,7 +28,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\KeyMaster_Data\KeyMaster_Data.csproj" />
-    <ProjectReference Include="..\KeyMaster_MVC\KeyMaster_MVC.csproj" />
   </ItemGroup>
 
 </Project>

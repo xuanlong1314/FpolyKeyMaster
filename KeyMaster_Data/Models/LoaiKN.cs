@@ -17,7 +17,7 @@ namespace KeyMaster_Data.Models
         public string TenLoaiKN { get; set; } // Tên loại kết nối
 
         [MaxLength(50)] // Giới hạn độ dài tối đa cho TrangThai
-        public string? TrangThai { get; set; } // Trạng thái loại kết nối (nullable)
+        public bool TrangThai { get; set; } // Trạng thái loại kết nối (nullable)
 
         // Danh sách sản phẩm chi tiết liên quan đến loại kết nối này
         public virtual ICollection<SanPhamCT> SanPhamCTs { get; set; } = new List<SanPhamCT>(); // Khởi tạo danh sách

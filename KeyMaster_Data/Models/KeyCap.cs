@@ -16,7 +16,7 @@ namespace KeyMaster_Data.Models
         public string TenKeyCap { get; set; } // Tên KeyCap
 
         [MaxLength(50)] // Giới hạn độ dài tối đa cho TrangThai
-        public string? TrangThai { get; set; } // Nullable nếu trạng thái không bắt buộc
+        public bool? TrangThai { get; set; } // Nullable nếu trạng thái không bắt buộc
 
         // Danh sách sản phẩm chi tiết liên quan đến KeyCap này
         public virtual ICollection<SanPhamCT> SanPhamCTs { get; set; }

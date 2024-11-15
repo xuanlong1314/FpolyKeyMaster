@@ -1,7 +1,18 @@
+using KeyMaster_API.Data;
+using KeyMaster_MVC.IService;
+using KeyMaster_MVC.Service;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddDbContext<AppDBcontexts>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+    options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
+});
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddHttpClient<IHangService, HangService>();
 
 var app = builder.Build();
 

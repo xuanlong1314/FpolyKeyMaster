@@ -17,7 +17,7 @@ namespace KeyMaster_Data.Models
         public string TenLoaiSP { get; set; } // Tên loại sản phẩm
 
         [MaxLength(50)] // Giới hạn độ dài tối đa cho TrangThai
-        public string? TrangThai { get; set; } // Trạng thái của loại sản phẩm (nullable)
+        public bool TrangThai { get; set; } // Trạng thái của loại sản phẩm (nullable)
         public virtual ICollection<SanPham> SanPhams { get; set; } // Khởi tạo danh sách
         // Có thể thêm các thuộc tính khác nếu cần thiết
         // Ví dụ: thuộc tính mô tả cho loại sản phẩm

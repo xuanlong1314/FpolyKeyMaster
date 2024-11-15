@@ -12,11 +12,8 @@ namespace KeyMaster_API.Data
 {
     public class AppDBcontexts : DbContext
     {
-        public AppDBcontexts(DbContextOptions<AppDBcontexts> options) : base(options)
-        {
-        }
-
-        public AppDBcontexts()
+        public AppDBcontexts(DbContextOptions<AppDBcontexts> options) 
+            : base(options)
         {
         }
 
@@ -45,7 +42,7 @@ namespace KeyMaster_API.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=LONG;Initial Catalog=FpolyKeyMasters;Integrated Security=True;Trust Server Certificate=True");
+            //optionsBuilder.UseSqlServer("Data Source=LONG;Initial Catalog=FpolyKeyMasters;Integrated Security=True;Trust Server Certificate=True");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

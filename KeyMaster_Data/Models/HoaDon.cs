@@ -22,7 +22,7 @@ namespace KeyMaster_Data.Models
         public decimal Gia { get; set; }
         [NotMapped]
         public decimal TongTien { get; set; }
-        public string TrangThai { get; set; }
+        public bool TrangThai { get; set; }
         public DateTime NgayVanChuyen { get; set; }
         public DateTime? NgayGiaoHangDuKien { get; set; }
         public DateTime? NgayNhanHang { get; set; }

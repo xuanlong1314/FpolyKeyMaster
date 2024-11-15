@@ -25,4 +25,9 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\KeyMaster_API\KeyMaster_API.csproj" />
+    <ProjectReference Include="..\KeyMaster_Data\KeyMaster_Data.csproj" />
+  </ItemGroup>
+
 </Project>

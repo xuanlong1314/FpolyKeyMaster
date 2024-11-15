@@ -17,7 +17,7 @@ namespace KeyMaster_Data.Models
         public string TenMau { get; set; } // Tên màu
 
         [MaxLength(50)] // Giới hạn độ dài tối đa cho TrangThai
-        public string? TrangThai { get; set; } // Trạng thái của màu (nullable)
+        public bool TrangThai { get; set; } // Trạng thái của màu (nullable)
 
         // Danh sách các sản phẩm chi tiết liên quan đến màu này
         public virtual ICollection<SanPhamCT> SanPhamCTs { get; set; } // Khởi tạo danh sách

@@ -30,7 +30,7 @@ namespace KeyMaster_Data.Models
 
         // Trạng thái hoạt động của hình ảnh
         [Required]
-        public string TrangThai { get; set; }
+        public bool TrangThai { get; set; }
         // Thuộc tính để liên kết nhiều sản phẩm với một hình ảnh
         public virtual ICollection<SanPham> SanPhams { get; set; }
     }

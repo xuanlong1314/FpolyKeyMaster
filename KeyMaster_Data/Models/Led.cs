@@ -16,7 +16,7 @@ namespace KeyMaster_Data.Models
         public string TenLed { get; set; } // Tên LED
 
         [MaxLength(100, ErrorMessage = "Trạng thái không được vượt quá 100 ký tự.")]
-        public string? TrangThai { get; set; } // Trạng thái của LED (nullable)
+        public bool TrangThai { get; set; } // Trạng thái của LED (nullable)
 
         // Tham chiếu đến các sản phẩm chi tiết
         public virtual ICollection<SanPhamCT> SanPhamCTs { get; set; } // Khởi tạo danh sách để tránh NullReferenceException

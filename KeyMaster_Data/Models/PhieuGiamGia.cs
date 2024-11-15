@@ -33,7 +33,7 @@ namespace KeyMaster_Data.Models
         public DateTime NgayKetThuc { get; set; } // Ngày kết thúc giảm giá
 
         [MaxLength(50)] // Giới hạn độ dài tối đa cho TrangThai
-        public string? TrangThai { get; set; } // Trạng thái phiếu giảm giá (nullable)
+        public bool TrangThai { get; set; } // Trạng thái phiếu giảm giá (nullable)
 
         [Range(1, int.MaxValue, ErrorMessage = "Số lượng phải lớn hơn 0.")]
         public int SoLuong { get; set; } // Số lượng phiếu giảm giá

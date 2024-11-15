@@ -31,7 +31,7 @@ namespace KeyMaster_Data.Models
         public DateTime? NgayKetThuc { get; set; } // Ngày kết thúc khuyến mãi (nullable)
 
         [MaxLength(50, ErrorMessage = "Trạng thái không được vượt quá 50 ký tự.")]
-        public string? TrangThai { get; set; } // Trạng thái (nullable)
+        public bool TrangThai { get; set; } // Trạng thái (nullable)
 
         // Danh sách sản phẩm khuyến mãi liên quan đến khuyến mãi này
         public virtual ICollection<SanPhamKM> SanPhamKMs { get; set; } = new List<SanPhamKM>(); // Khởi tạo danh sách

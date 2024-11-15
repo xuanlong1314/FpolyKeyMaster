@@ -135,9 +135,8 @@ namespace KeyMaster_API.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("TrangThai")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<bool>("TrangThai")
+                        .HasColumnType("bit");
 
                     b.HasKey("IdHang");
 
@@ -165,9 +164,8 @@ namespace KeyMaster_API.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<string>("TrangThai")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<bool>("TrangThai")
+                        .HasColumnType("bit");
 
                     b.HasKey("IdHinhAnh");
 
@@ -222,9 +220,8 @@ namespace KeyMaster_API.Migrations
                     b.Property<int>("SoLuong")
                         .HasColumnType("int");
 
-                    b.Property<string>("TrangThai")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<bool>("TrangThai")
+                        .HasColumnType("bit");
 
                     b.HasKey("IdHoaDon");
 
@@ -280,9 +277,9 @@ namespace KeyMaster_API.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("TrangThai")
+                    b.Property<bool?>("TrangThai")
                         .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("bit");
 
                     b.HasKey("IdKeyCap");
 
@@ -311,9 +308,9 @@ namespace KeyMaster_API.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("TrangThai")
+                    b.Property<bool>("TrangThai")
                         .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("bit");
 
                     b.HasKey("IdKhuyenMai");
 
@@ -348,9 +345,9 @@ namespace KeyMaster_API.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("TrangThai")
+                    b.Property<bool>("TrangThai")
                         .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("bit");
 
                     b.HasKey("IdLed");
 
@@ -372,10 +369,9 @@ namespace KeyMaster_API.Migrations
                     b.Property<DateTime>("NgayNhanHang")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("TrangThai")
-                        .IsRequired()
+                    b.Property<bool>("TrangThai")
                         .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("bit");
 
                     b.HasKey("IdLichSuHoaDon");
 
@@ -395,9 +391,9 @@ namespace KeyMaster_API.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("TrangThai")
+                    b.Property<bool>("TrangThai")
                         .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("bit");
 
                     b.HasKey("IdLoaiKN");
 
@@ -415,9 +411,9 @@ namespace KeyMaster_API.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("TrangThai")
+                    b.Property<bool>("TrangThai")
                         .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("bit");
 
                     b.HasKey("IdLoaiSP");
 
@@ -435,9 +431,9 @@ namespace KeyMaster_API.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("TrangThai")
+                    b.Property<bool>("TrangThai")
                         .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("bit");
 
                     b.HasKey("IdMau");
 
@@ -529,9 +525,9 @@ namespace KeyMaster_API.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("TrangThai")
+                    b.Property<bool>("TrangThai")
                         .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("bit");
 
                     b.HasKey("IdPhieuGiamGia");
 
@@ -551,9 +547,9 @@ namespace KeyMaster_API.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("TrangThai")
+                    b.Property<bool>("TrangThai")
                         .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("bit");
 
                     b.HasKey("IdPhuongThucThanhToan");
 
